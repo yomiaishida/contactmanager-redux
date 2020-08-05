@@ -12,7 +12,7 @@ class EditContact extends Component {
     errors: {},
   };
 
-  componentWillReceiveProps(nextProps, nextState) {
+  UNSAFE_componentWillReceiveProps(nextProps, nextState) {
     const { name, email, phone } = nextProps.contact;
     this.setState({
       name,
